@@ -11,7 +11,7 @@ import SwiftUI
 struct expense_trackApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
         }
     }
 }

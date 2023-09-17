@@ -11,14 +11,25 @@
 		276BF0722AB6C82800DA910B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BF0712AB6C82800DA910B /* ContentView.swift */; };
 		276BF0742AB6C82A00DA910B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276BF0732AB6C82A00DA910B /* Assets.xcassets */; };
 		276BF0772AB6C82A00DA910B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276BF0762AB6C82A00DA910B /* Preview Assets.xcassets */; };
+		276BF09E2AB6E9FA00DA910B /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276BF09D2AB6E9FA00DA910B /* SplashScreen.swift */; };
+		276BF0AD2AB6F84600DA910B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276BF0A92AB6F84600DA910B /* Poppins-Regular.ttf */; };
+		276BF0AE2AB6F84600DA910B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276BF0AA2AB6F84600DA910B /* Poppins-Bold.ttf */; };
+		276BF0AF2AB6F84600DA910B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276BF0AB2AB6F84600DA910B /* Poppins-Medium.ttf */; };
+		276BF0B02AB6F84600DA910B /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 276BF0AC2AB6F84600DA910B /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		276BF06C2AB6C82800DA910B /* expense-track.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "expense-track.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		276BF06C2AB6C82800DA910B /* ExpenseTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276BF06F2AB6C82800DA910B /* expense_trackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = expense_trackApp.swift; sourceTree = "<group>"; };
 		276BF0712AB6C82800DA910B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		276BF0732AB6C82A00DA910B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276BF0762AB6C82A00DA910B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		276BF09D2AB6E9FA00DA910B /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		276BF0A82AB6F68900DA910B /* ExpenseTrack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpenseTrack-Info.plist"; sourceTree = "<group>"; };
+		276BF0A92AB6F84600DA910B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		276BF0AA2AB6F84600DA910B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		276BF0AB2AB6F84600DA910B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		276BF0AC2AB6F84600DA910B /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,7 @@
 		276BF0632AB6C82800DA910B = {
 			isa = PBXGroup;
 			children = (
+				276BF0A82AB6F68900DA910B /* ExpenseTrack-Info.plist */,
 				276BF06E2AB6C82800DA910B /* expense-track */,
 				276BF06D2AB6C82800DA910B /* Products */,
 			);
@@ -43,7 +55,7 @@
 		276BF06D2AB6C82800DA910B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				276BF06C2AB6C82800DA910B /* expense-track.app */,
+				276BF06C2AB6C82800DA910B /* ExpenseTrack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +101,7 @@
 		276BF0992AB6DB7700DA910B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				276BF09C2AB6E9D000DA910B /* SplashScreen */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 		276BF09A2AB6DB9000DA910B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				276BF09F2AB6F4DB00DA910B /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -107,12 +121,31 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		276BF09C2AB6E9D000DA910B /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				276BF09D2AB6E9FA00DA910B /* SplashScreen.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		276BF09F2AB6F4DB00DA910B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				276BF0AA2AB6F84600DA910B /* Poppins-Bold.ttf */,
+				276BF0AB2AB6F84600DA910B /* Poppins-Medium.ttf */,
+				276BF0A92AB6F84600DA910B /* Poppins-Regular.ttf */,
+				276BF0AC2AB6F84600DA910B /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		276BF06B2AB6C82800DA910B /* expense-track */ = {
+		276BF06B2AB6C82800DA910B /* ExpenseTrack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 276BF07A2AB6C82A00DA910B /* Build configuration list for PBXNativeTarget "expense-track" */;
+			buildConfigurationList = 276BF07A2AB6C82A00DA910B /* Build configuration list for PBXNativeTarget "ExpenseTrack" */;
 			buildPhases = (
 				276BF0682AB6C82800DA910B /* Sources */,
 				276BF0692AB6C82800DA910B /* Frameworks */,
@@ -122,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = "expense-track";
+			name = ExpenseTrack;
 			productName = "expense-track";
-			productReference = 276BF06C2AB6C82800DA910B /* expense-track.app */;
+			productReference = 276BF06C2AB6C82800DA910B /* ExpenseTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 276BF0672AB6C82800DA910B /* Build configuration list for PBXProject "expense-track" */;
+			buildConfigurationList = 276BF0672AB6C82800DA910B /* Build configuration list for PBXProject "ExpenseTrack" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -155,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				276BF06B2AB6C82800DA910B /* expense-track */,
+				276BF06B2AB6C82800DA910B /* ExpenseTrack */,
 			);
 		};
 /* End PBXProject section */
@@ -165,8 +198,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276BF0AD2AB6F84600DA910B /* Poppins-Regular.ttf in Resources */,
 				276BF0772AB6C82A00DA910B /* Preview Assets.xcassets in Resources */,
 				276BF0742AB6C82A00DA910B /* Assets.xcassets in Resources */,
+				276BF0B02AB6F84600DA910B /* Poppins-SemiBold.ttf in Resources */,
+				276BF0AE2AB6F84600DA910B /* Poppins-Bold.ttf in Resources */,
+				276BF0AF2AB6F84600DA910B /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				276BF09E2AB6E9FA00DA910B /* SplashScreen.swift in Sources */,
 				276BF0722AB6C82800DA910B /* ContentView.swift in Sources */,
 				276BF0702AB6C82800DA910B /* expense_trackApp.swift in Sources */,
 			);
@@ -239,6 +277,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = ExpenseTrack;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -292,6 +331,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = ExpenseTrack;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -310,11 +350,13 @@
 				DEVELOPMENT_TEAM = N574H3BPZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ExpenseTrack-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,10 +364,13 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "fl.ios.apps.expense-track";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExpenseTrack;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -340,11 +385,13 @@
 				DEVELOPMENT_TEAM = N574H3BPZ5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ExpenseTrack-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,17 +399,20 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "fl.ios.apps.expense-track";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ExpenseTrack;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		276BF0672AB6C82800DA910B /* Build configuration list for PBXProject "expense-track" */ = {
+		276BF0672AB6C82800DA910B /* Build configuration list for PBXProject "ExpenseTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				276BF0782AB6C82A00DA910B /* Debug */,
@@ -371,7 +421,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		276BF07A2AB6C82A00DA910B /* Build configuration list for PBXNativeTarget "expense-track" */ = {
+		276BF07A2AB6C82A00DA910B /* Build configuration list for PBXNativeTarget "ExpenseTrack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				276BF07B2AB6C82A00DA910B /* Debug */,
