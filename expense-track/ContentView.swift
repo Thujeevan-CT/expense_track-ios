@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage(Constants.userID) var userID: String = ""
+    
     var body: some View {
-        HStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, IOS!")
+        if userID.isEmpty {
+            Login().preferredColorScheme(.light)
+        } else {
+            MainMenu().preferredColorScheme(.light)
         }
-        .padding()
     }
 }
 
