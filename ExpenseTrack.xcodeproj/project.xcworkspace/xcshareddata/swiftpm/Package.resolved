@@ -1,6 +1,24 @@
 {
   "pins" : [
     {
+      "identity" : "chartview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apppear/chartview.git",
+      "state" : {
+        "revision" : "9115a992c91fa19cbb4f2241084240d38654a1fc",
+        "version" : "1.5.5"
+      }
+    },
+    {
+      "identity" : "swiftui-piechart",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/skw398/SwiftUI-PieChart.git",
+      "state" : {
+        "revision" : "b42d022d201b95668c75349ac6c47992560863e9",
+        "version" : "0.3.0"
+      }
+    },
+    {
       "identity" : "swiftui-shimmer",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/markiv/SwiftUI-Shimmer",

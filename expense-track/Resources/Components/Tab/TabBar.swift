@@ -7,33 +7,24 @@
 
 import SwiftUI
 
-struct TabBar: View {
+struct TabBar<Content: View>: View {
     @Binding var activeTab: Tab
     @Binding var tabShapePosition: CGPoint
-    init(activeTab: Binding<Tab>, tabShapePosition: Binding<CGPoint>) {
+    let content: Content
+
+    init(activeTab: Binding<Tab>, tabShapePosition: Binding<CGPoint>, @ViewBuilder content: () -> Content) {
         self._activeTab = activeTab
         self._tabShapePosition = tabShapePosition
+        self.content = content()
     }
 
-var body: some View {
-    VStack(spacing: 0) {
+    var body: some View {
+        VStack(spacing: 0) {
             TabView(selection: $activeTab) {
-                Dashboard()
-                   .tag(Tab.dashboard)
-                   .toolbar(.hidden, for: .tabBar)
-                Budget()
-                   .tag(Tab.budget)
-                   .toolbar(.hidden, for: .tabBar)
-                Add()
-                   .tag(Tab.add)
-                   .toolbar(.hidden, for: .tabBar)
-                Report()
-                   .tag(Tab.report)
-                   .toolbar(.hidden, for: .tabBar)
-                Profile()
-                   .tag(Tab.profile)
-                   .toolbar(.hidden, for: .tabBar)
-            }
+                content
+                    .tag(Tab.dashboard)
+                    .toolbar(.hidden, for: .tabBar)
+            }.background(Color.purple)
             CustomTabBarView(activeTab: $activeTab, tabShapePosition: $tabShapePosition)
         }
     }

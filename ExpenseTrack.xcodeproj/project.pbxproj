@@ -46,6 +46,20 @@
 		27BB9A752ABF089E00A5D61C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB9A742ABF089E00A5D61C /* Constants.swift */; };
 		27BB9A792ABF196700A5D61C /* HttpErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB9A782ABF196700A5D61C /* HttpErrorMessage.swift */; };
 		27BB9A7B2AC0027100A5D61C /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB9A7A2AC0027100A5D61C /* HelperFunctions.swift */; };
+		27CD30BA2AC7D03F00E2E3F5 /* StatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30B92AC7D03F00E2E3F5 /* StatsModel.swift */; };
+		27CD30BC2AC7D14C00E2E3F5 /* StatsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30BB2AC7D14C00E2E3F5 /* StatsViewModel.swift */; };
+		27CD30BE2AC7DE2E00E2E3F5 /* IncomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30BD2AC7DE2E00E2E3F5 /* IncomeModel.swift */; };
+		27CD30C02AC7DEA200E2E3F5 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30BF2AC7DEA200E2E3F5 /* IncomeViewModel.swift */; };
+		27CD30C32AC7F76F00E2E3F5 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 27CD30C22AC7F76F00E2E3F5 /* SwiftUICharts */; };
+		27CD30C62AC7FB1A00E2E3F5 /* PieChart in Frameworks */ = {isa = PBXBuildFile; productRef = 27CD30C52AC7FB1A00E2E3F5 /* PieChart */; };
+		27CD30C82AC7FF9A00E2E3F5 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30C72AC7FF9A00E2E3F5 /* PieChart.swift */; };
+		27CD30CC2AC80FFD00E2E3F5 /* ExpenseCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30CB2AC80FFD00E2E3F5 /* ExpenseCategoryModel.swift */; };
+		27CD30CE2AC8108F00E2E3F5 /* ExpenseCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30CD2AC8108F00E2E3F5 /* ExpenseCategoryViewModel.swift */; };
+		27CD30D02AC8165900E2E3F5 /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30CF2AC8165900E2E3F5 /* ExpenseModel.swift */; };
+		27CD30D22AC817B500E2E3F5 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30D12AC817B500E2E3F5 /* ExpenseViewModel.swift */; };
+		27CD30D42AC8396700E2E3F5 /* BudgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30D32AC8396700E2E3F5 /* BudgetModel.swift */; };
+		27CD30D62AC83A8600E2E3F5 /* BudgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30D52AC83A8600E2E3F5 /* BudgetViewModel.swift */; };
+		27CD30D82AC855CC00E2E3F5 /* CardLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD30D72AC855CC00E2E3F5 /* CardLoading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +103,18 @@
 		27BB9A742ABF089E00A5D61C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		27BB9A782ABF196700A5D61C /* HttpErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrorMessage.swift; sourceTree = "<group>"; };
 		27BB9A7A2AC0027100A5D61C /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		27CD30B92AC7D03F00E2E3F5 /* StatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsModel.swift; sourceTree = "<group>"; };
+		27CD30BB2AC7D14C00E2E3F5 /* StatsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewModel.swift; sourceTree = "<group>"; };
+		27CD30BD2AC7DE2E00E2E3F5 /* IncomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeModel.swift; sourceTree = "<group>"; };
+		27CD30BF2AC7DEA200E2E3F5 /* IncomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewModel.swift; sourceTree = "<group>"; };
+		27CD30C72AC7FF9A00E2E3F5 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		27CD30CB2AC80FFD00E2E3F5 /* ExpenseCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryModel.swift; sourceTree = "<group>"; };
+		27CD30CD2AC8108F00E2E3F5 /* ExpenseCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCategoryViewModel.swift; sourceTree = "<group>"; };
+		27CD30CF2AC8165900E2E3F5 /* ExpenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
+		27CD30D12AC817B500E2E3F5 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
+		27CD30D32AC8396700E2E3F5 /* BudgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetModel.swift; sourceTree = "<group>"; };
+		27CD30D52AC83A8600E2E3F5 /* BudgetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewModel.swift; sourceTree = "<group>"; };
+		27CD30D72AC855CC00E2E3F5 /* CardLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLoading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +123,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				272D9A882AC58F3900F61B0C /* Shimmer in Frameworks */,
+				27CD30C62AC7FB1A00E2E3F5 /* PieChart in Frameworks */,
+				27CD30C32AC7F76F00E2E3F5 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +222,11 @@
 			isa = PBXGroup;
 			children = (
 				2777B50C2AC2A6570062F9D7 /* UserModel.swift */,
+				27CD30B92AC7D03F00E2E3F5 /* StatsModel.swift */,
+				27CD30BD2AC7DE2E00E2E3F5 /* IncomeModel.swift */,
+				27CD30CB2AC80FFD00E2E3F5 /* ExpenseCategoryModel.swift */,
+				27CD30CF2AC8165900E2E3F5 /* ExpenseModel.swift */,
+				27CD30D32AC8396700E2E3F5 /* BudgetModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,6 +238,11 @@
 				2777B5052AC1E6740062F9D7 /* ForgotPasswordViewModel.swift */,
 				2777B5072AC285860062F9D7 /* LoginViewModel.swift */,
 				272D9A842AC5850500F61B0C /* ProfileViewModel.swift */,
+				27CD30BB2AC7D14C00E2E3F5 /* StatsViewModel.swift */,
+				27CD30BF2AC7DEA200E2E3F5 /* IncomeViewModel.swift */,
+				27CD30CD2AC8108F00E2E3F5 /* ExpenseCategoryViewModel.swift */,
+				27CD30D12AC817B500E2E3F5 /* ExpenseViewModel.swift */,
+				27CD30D52AC83A8600E2E3F5 /* BudgetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -313,6 +351,8 @@
 				27366B742AB8313B003EE774 /* TextFieldUI.swift */,
 				2777B5012AC170230062F9D7 /* Dialog.swift */,
 				2777B5032AC19FF30062F9D7 /* Loading.swift */,
+				27CD30C72AC7FF9A00E2E3F5 /* PieChart.swift */,
+				27CD30D72AC855CC00E2E3F5 /* CardLoading.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -343,6 +383,8 @@
 			name = ExpenseTrack;
 			packageProductDependencies = (
 				272D9A872AC58F3900F61B0C /* Shimmer */,
+				27CD30C22AC7F76F00E2E3F5 /* SwiftUICharts */,
+				27CD30C52AC7FB1A00E2E3F5 /* PieChart */,
 			);
 			productName = "expense-track";
 			productReference = 276BF06C2AB6C82800DA910B /* ExpenseTrack.app */;
@@ -356,7 +398,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					276BF06B2AB6C82800DA910B = {
 						CreatedOnToolsVersion = 14.3;
@@ -374,6 +416,8 @@
 			mainGroup = 276BF0632AB6C82800DA910B;
 			packageReferences = (
 				272D9A862AC58F3900F61B0C /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */,
+				27CD30C12AC7F76F00E2E3F5 /* XCRemoteSwiftPackageReference "chartview" */,
+				27CD30C42AC7FB1A00E2E3F5 /* XCRemoteSwiftPackageReference "SwiftUI-PieChart" */,
 			);
 			productRefGroup = 276BF06D2AB6C82800DA910B /* Products */;
 			projectDirPath = "";
@@ -411,32 +455,44 @@
 				272D9A732AC55D1B00F61B0C /* Profile.swift in Sources */,
 				276BF0722AB6C82800DA910B /* ContentView.swift in Sources */,
 				272D9A6E2AC5556600F61B0C /* CustomTabBar.swift in Sources */,
+				27CD30D62AC83A8600E2E3F5 /* BudgetViewModel.swift in Sources */,
 				27BB9A792ABF196700A5D61C /* HttpErrorMessage.swift in Sources */,
 				272D9A702AC5577700F61B0C /* TabBar.swift in Sources */,
 				272D9A752AC55E2E00F61B0C /* Add.swift in Sources */,
 				276BF0702AB6C82800DA910B /* expense_trackApp.swift in Sources */,
 				272D9A6A2AC5532F00F61B0C /* TabItem.swift in Sources */,
 				272D9A662AC54A7600F61B0C /* TabShape.swift in Sources */,
+				27CD30C82AC7FF9A00E2E3F5 /* PieChart.swift in Sources */,
+				27CD30BC2AC7D14C00E2E3F5 /* StatsViewModel.swift in Sources */,
 				272D9A852AC5850500F61B0C /* ProfileViewModel.swift in Sources */,
 				2777B5042AC19FF30062F9D7 /* Loading.swift in Sources */,
 				2777B5022AC170230062F9D7 /* Dialog.swift in Sources */,
+				27CD30BE2AC7DE2E00E2E3F5 /* IncomeModel.swift in Sources */,
 				276BF0C02AB70C2500DA910B /* ButtonUI.swift in Sources */,
 				2777B5062AC1E6740062F9D7 /* ForgotPasswordViewModel.swift in Sources */,
+				27CD30CC2AC80FFD00E2E3F5 /* ExpenseCategoryModel.swift in Sources */,
+				27CD30CE2AC8108F00E2E3F5 /* ExpenseCategoryViewModel.swift in Sources */,
 				27BB9A7B2AC0027100A5D61C /* HelperFunctions.swift in Sources */,
 				2777B5082AC285860062F9D7 /* LoginViewModel.swift in Sources */,
+				27CD30D42AC8396700E2E3F5 /* BudgetModel.swift in Sources */,
 				272D9A7D2AC55EBE00F61B0C /* Budget.swift in Sources */,
 				27BB9A6F2ABEACF100A5D61C /* RegistrationViewModel.swift in Sources */,
 				276BF0B72AB7054D00DA910B /* Login.swift in Sources */,
+				27CD30D22AC817B500E2E3F5 /* ExpenseViewModel.swift in Sources */,
 				272D9A7F2AC55FA800F61B0C /* Dashboard.swift in Sources */,
 				27BB9A752ABF089E00A5D61C /* Constants.swift in Sources */,
 				2777B50D2AC2A6570062F9D7 /* UserModel.swift in Sources */,
+				27CD30C02AC7DEA200E2E3F5 /* IncomeViewModel.swift in Sources */,
 				272D9A8A2AC5A48E00F61B0C /* AuthManager.swift in Sources */,
 				272D9A7A2AC55E6700F61B0C /* Report.swift in Sources */,
+				27CD30D82AC855CC00E2E3F5 /* CardLoading.swift in Sources */,
 				272D9A832AC5733C00F61B0C /* MainMenu.swift in Sources */,
 				272D9A642AC53B7400F61B0C /* TabPages.swift in Sources */,
 				27366B752AB8313B003EE774 /* TextFieldUI.swift in Sources */,
 				276BF0B92AB7056E00DA910B /* Register.swift in Sources */,
 				276BF0BB2AB7057B00DA910B /* ForgotPassword.swift in Sources */,
+				27CD30D02AC8165900E2E3F5 /* ExpenseModel.swift in Sources */,
+				27CD30BA2AC7D03F00E2E3F5 /* StatsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +717,22 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		27CD30C12AC7F76F00E2E3F5 /* XCRemoteSwiftPackageReference "chartview" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apppear/chartview.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+		27CD30C42AC7FB1A00E2E3F5 /* XCRemoteSwiftPackageReference "SwiftUI-PieChart" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/skw398/SwiftUI-PieChart.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -668,6 +740,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 272D9A862AC58F3900F61B0C /* XCRemoteSwiftPackageReference "SwiftUI-Shimmer" */;
 			productName = Shimmer;
+		};
+		27CD30C22AC7F76F00E2E3F5 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27CD30C12AC7F76F00E2E3F5 /* XCRemoteSwiftPackageReference "chartview" */;
+			productName = SwiftUICharts;
+		};
+		27CD30C52AC7FB1A00E2E3F5 /* PieChart */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27CD30C42AC7FB1A00E2E3F5 /* XCRemoteSwiftPackageReference "SwiftUI-PieChart" */;
+			productName = PieChart;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

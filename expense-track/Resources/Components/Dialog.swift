@@ -24,9 +24,9 @@ struct Dialog: View {
     
     var body: some View {
         ZStack{
-            Color(.black).opacity(0.48)
+//            Color(.black).opacity(0.48)
             VStack {
-                Text(title).font(Font.custom("Poppins-Bold", size: 22))
+                Text(title).font(Font.custom("Poppins-Bold", size: 22)).multilineTextAlignment(.center)
                 if(decription.count >= 1) {
                     Text(decription).font(Font.custom("Poppins-Regular", size: 14)).padding(EdgeInsets(top: 0.5, leading: 0, bottom: 10, trailing: 0)).multilineTextAlignment(.center)
                 }
@@ -53,6 +53,6 @@ struct Dialog: View {
 
 struct Dialog_Previews: PreviewProvider {
     static var previews: some View {
-        Dialog(status: .constant(true), title: "Registraion success", decription: "You can login your account.", action: {})
+        Dialog(status: .constant(true), title: "Password resettted success!", decription: "You can login your account.", action: {})
     }
 }

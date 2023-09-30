@@ -16,7 +16,7 @@ struct ButtonUI: View {
             onClick?()
         } label: {
             Text(title)
-                .font(Font.custom("Poppins-SemiBold", size:18))
+                .font(Font.custom("Poppins-SemiBold", size: 16))
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
                 .frame( minWidth: 0, maxWidth: .infinity, minHeight: 50, maxHeight: 50 )

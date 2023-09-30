@@ -69,6 +69,8 @@ class LoginViewModel: ObservableObject {
                     UserDefaults.standard.set(response.data?.data.token, forKey: Constants.jwtToken)
                     UserDefaults.standard.set(response.data?.data.user.id, forKey: Constants.userID)
                     completion(true, "Logged-in success")
+                    self.email = ""
+                    self.password = ""
                 } else {
                     var messageString = ""
                     switch response.message {
