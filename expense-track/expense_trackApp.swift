@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct expense_trackApp: App {
+    @StateObject var viewModel = LoginViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreen()
+                .environment(\.font, Font.custom("Poppins-Regular", size: 14))
+                .environmentObject(viewModel)
         }
     }
 }
