@@ -51,7 +51,6 @@ struct SelectedOption: View {
     
     @State private var selectedCategoryIndex = 0
     @State private var errorMessage: String = ""
-    @State private var isShowSuccessPopup: Bool = false
     @State private var date = Date()
     
     var selected: StatsOptions
@@ -71,6 +70,7 @@ struct SelectedOption: View {
                 Text(errorMessage.isEmpty ? "" : errorMessage).foregroundColor(Color.red).font(Font.custom("Poppins-regular", size: 13)).padding(.top, 5)
                 if !incomeVM.isLoading {
                     ButtonUI(title: "Save"){
+                        errorMessage = ""
                         incomeVM.date = String(date.timeIntervalSince1970)
                         incomeVM.addIncome { success, message in
                             if (success) {
@@ -81,7 +81,11 @@ struct SelectedOption: View {
                         }
                     }.padding(.top, 20).shimmering(active: incomeVM.isLoading)
                 }
-            }.padding(20)
+            }
+            .padding(20)
+            .onDisappear {
+                errorMessage = ""
+            }
         case .expense:
             VStack {
                 TextFieldUI(text: $expenseVM.amount, title: "Amount", placeholder: "Enter expense amount", keyboardType: .numberPad).shimmering(active: expenseVM.isLoading)
@@ -106,6 +110,7 @@ struct SelectedOption: View {
                     .accentColor(Color(hex: "#6C0EB7"))
                 if !expenseVM.isLoading {
                     ButtonUI(title: "Save"){
+                        errorMessage = ""
                         expenseVM.categoryID = categories[selectedCategoryIndex].id
                         expenseVM.date = String(date.timeIntervalSince1970)
                         expenseVM.addExpense { success, message in
@@ -118,7 +123,11 @@ struct SelectedOption: View {
                         }
                     }.padding(.top, 20)
                 }
-            }.padding(20)
+            }
+            .padding(20)
+            .onDisappear {
+                errorMessage = ""
+            }
         }
     }
 }

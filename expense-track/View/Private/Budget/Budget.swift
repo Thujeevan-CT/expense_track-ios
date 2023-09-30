@@ -95,16 +95,18 @@ struct Budget: View {
                             TextFieldUI(text: $budgetVM.amount, title: "Amount", placeholder: "Enter expense amount", keyboardType: .numberPad)
                             Text(errorMessage.isEmpty ? "" : errorMessage).foregroundColor(Color.red).font(Font.custom("Poppins-regular", size: 13)).padding(.top, 5)
                             ButtonUI(title: "Save") {
+                                errorMessage = ""
                                 budgetVM.categoryID = expenseCategoryViewModel.expenseCategories[selectedCategoryIndex].id
                                 budgetVM.budgetType = categories[selectedPeriodIndex].key
                                 budgetVM.addBudget { success, message in
                                     if (success) {
+                                        budgetVM.fetchBudgets { _,_ in }
                                         self.showBottomSheet.toggle()
                                     } else {
                                         self.errorMessage = (message ?? message)!
                                     }
                                 }
-                            }
+                            }.shimmering(active: budgetVM.isLoading)
                         }.padding(.top, 10)
                     }
                 }.padding(20)
@@ -113,6 +115,9 @@ struct Budget: View {
         .onAppear {
             expenseCategoryViewModel.fetchCategories()
             budgetVM.fetchBudgets { _,_ in }
+        }
+        .onDisappear {
+            errorMessage = ""
         }
     }
 }

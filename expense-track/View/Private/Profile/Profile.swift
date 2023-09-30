@@ -97,6 +97,7 @@ struct Profile: View {
             .padding(20)
             .onDisappear {
                 self.isEdit = false
+                errorMessage = ""
             }
             .onAppear {
                 profileVM.getProfile { success, message in }
